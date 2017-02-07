@@ -1,9 +1,9 @@
 {
   "name": "jebster/maps",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "pagekit-extension",
   "title": "Maps",
-  "description": "Google Maps widget",
+  "description": "A Google Maps widget. Just enter your location and it works.",
   "license": "MIT",
   "authors": [
     {

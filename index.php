@@ -12,7 +12,7 @@ return [
         'maps:' => ''
     ],
     'routes' => [
-        '@maps' => [
+        'maps' => [
             'path' => '/maps',
             'controller' => 'Jebster\\Maps\\Controller\\MapsController'
         ]
@@ -33,5 +33,5 @@ return [
         'widgets/mapWidget.php'
     ],
 
-    'settings' => '@maps',
+    'settings' => '@maps'
 ];
