@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pagekit 1.0.11 (jebster/maps, messages)\n"
-"POT-Creation-Date: 2017-01-28 12:32+0000\n"
+"POT-Creation-Date: 2017-02-13 17:22+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,10 +9,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Maps Settings"
+msgid "Title"
 msgstr ""
 
-msgid "Save"
+msgid "Text to display above map"
+msgstr ""
+
+msgid "Title cannot be blank."
 msgstr ""
 
 msgid "Options"
@@ -22,5 +25,8 @@ msgid "Satellite View"
 msgstr ""
 
 msgid "Saved."
+msgstr ""
+
+msgid "Maps Settings"
 msgstr ""
 
