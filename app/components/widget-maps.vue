@@ -21,7 +21,7 @@
             <div class="uk-form-row">
                 <label for="form-location" class="uk-form-label" uk-tooltip="{{ 'Both longitude/latitude or writing a specific address are allowed.' | trans }}">{{ 'Location' | trans }}</label>
                 <div class="uk-form-controls">
-                    <input id="form-location" class="uk-form-width-large" type="text" name="location" v-model="widget.data.location.location" placeholder="{{placeholder.location}}"  v-validate:required>
+                    <input id="form-location" class="uk-form-width-large" type="text" name="location" v-model="widget.data.location.location" placeholder="{{placeholder.location}}" v-validate:required>
                     <p class="uk-form-help-block uk-text-danger" v-show="form.location.invalid">{{ 'Location is required' | trans }}</p>
                 </div>
             </div>

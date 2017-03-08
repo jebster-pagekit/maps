@@ -1,18 +1,18 @@
 <?php
 
-$headerText = $location['header'];
-$width = $location['width'];
-$height = $location['height'];
+$headerText = key_exists('header', $location) ? $location['header'] : '';
+$width = key_exists('width', $location) ? $location['width'] : '100%';
+$height = key_exists('height', $location) ? $location['height'] : '320px';
 
 $loc = $location['location'];
 $satellite = key_exists('satellite', $location) ? $location['satellite'] : false ? 'k' : '';
-$zoom = $location['zoom'];
+$zoom = key_exists('zoom', $location) ? $location['zoom'] : 14;
 $color = key_exists('headerColor', $location) ? $location['headerColor'] : '#000';
 
 ?>
 
 <div id="mapouter">
-    <p style="text-align: center; width: 100%; color: <?= $color ?>; line-height: 60px; font-size: 50px; letter-spacing: 1px;">
+    <p style="text-align: center; width: 100%; color: <?= $color ?>; margin: 0; line-height: 60px; font-size: 50px; letter-spacing: 1px;">
         <?= $headerText ?>
     </p>
     <div id="gmap_canvas" style="margin-bottom: -3.5px">
