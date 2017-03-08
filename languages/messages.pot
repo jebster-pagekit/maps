@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pagekit 1.0.11 (jebster/maps, messages)\n"
-"POT-Creation-Date: 2017-02-13 17:22+0000\n"
+"POT-Creation-Date: 2017-03-08 17:06+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,22 @@ msgstr ""
 msgid "Title cannot be blank."
 msgstr ""
 
+msgid "Both longitude/latitude or writing a specific address are allowed."
+msgstr ""
+
+msgid "Location is required"
+msgstr ""
+
+msgid "Either use percentage(%) or pixels(px)"
+msgstr ""
+
 msgid "Options"
 msgstr ""
 
 msgid "Satellite View"
+msgstr ""
+
+msgid "Scroll to zoom"
 msgstr ""
 
 msgid "Saved."

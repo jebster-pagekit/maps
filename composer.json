@@ -1,6 +1,6 @@
 {
   "name": "jebster/maps",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "pagekit-extension",
   "title": "Maps",
   "description": "A Google Maps widget. Just enter your location and it works.",
