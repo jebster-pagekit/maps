@@ -14,18 +14,20 @@
                 <label for="form-header" class="uk-form-label">{{ 'Header' | trans }}</label>
                 <div class="uk-form-controls">
                     <input id="form-header" class="uk-form-width-large" type="text" v-model="widget.data.location.header" placeholder="{{placeholder.header}}">
+                    <input id="form-header-color" type="color" v-model="widget.data.location.headerColor" />
                 </div>
             </div>
 
             <div class="uk-form-row">
-                <label for="form-location" class="uk-form-label">{{ 'Location' | trans }}</label>
+                <label for="form-location" class="uk-form-label" uk-tooltip="{{ 'Both longitude/latitude or writing a specific address are allowed.' | trans }}">{{ 'Location' | trans }}</label>
                 <div class="uk-form-controls">
-                    <input id="form-location" class="uk-form-width-large" type="text" v-model="widget.data.location.location" placeholder="{{placeholder.location}}">
+                    <input id="form-location" class="uk-form-width-large" type="text" name="location" v-model="widget.data.location.location" placeholder="{{placeholder.location}}"  v-validate:required>
+                    <p class="uk-form-help-block uk-text-danger" v-show="form.location.invalid">{{ 'Location is required' | trans }}</p>
                 </div>
             </div>
 
             <div class="uk-form-row">
-                <label for="form-height" class="uk-form-label">{{ 'Height' | trans }}</label>
+                <label for="form-height" class="uk-form-label" uk-tooltip="{{ 'Either use percentage or px' | trans }}">{{ 'Height' | trans }}</label>
                 <div class="uk-form-controls">
                     <input id="form-height" class="uk-form-width-large" type="text" v-model="widget.data.location.height" placeholder="{{placeholder.height}}">
                 </div>
@@ -76,20 +78,13 @@
                     height: '320px',
                     location: 'Bystævneparken 19, 2700 Brønshøj',
                     zoom: 14,
-                    satellite: true
+                    satellite: true,
+                    color: '#33cc00'
                 }
             }
         },
         created() {
             this.$options.partials = this.$parent.$options.partials;
-//            this.widget.data.config = _.merge({
-//                header: '',
-//                width: '100%',
-//                height: '320px',
-//                location: '',
-//                zoom: 14,
-//                satellite: true
-//            }, this.widget.data.config);
         },
 
         methods: {
